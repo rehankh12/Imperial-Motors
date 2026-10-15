@@ -18,7 +18,7 @@ nav {
 }
 
 nav img {
-  /* min-width: 100px; */
+  min-width: 100px;
   height: 100px;
   overflow: hidden;
 }
@@ -66,14 +66,12 @@ nav li a:hover {
 /* --------------------HERO SECTION------------------ */
 .hero {
   background-image: url(./images/hero-image.jpeg);
-  /* background: url(images/hero-image.jpeg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   display: flex;
-  /* align-items: center; */
   min-height: 100vh;
 }
 
@@ -242,11 +240,6 @@ nav li a:hover {
 .modelcard:hover .card-img img {
   transform: scale(1.15);
 }
-/* .card2 img {
-  background-color: #37363620;
-  object-fit: contain;
-  object-position: center;
-} */
 
 .card-head {
   display: flex;
@@ -254,7 +247,6 @@ nav li a:hover {
 }
 .card-head h2 {
   color: white;
-  /* padding: 10px; */
 }
 .card-head h3 {
   color: #008cff;
@@ -270,8 +262,6 @@ nav li a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* margin: 10px; */
-  /* border: 2px solid red; */
 }
 .detail {
   border: 2px solid #008cff5d;
@@ -329,4 +319,78 @@ nav li a:hover {
   background-color: #024b87e9;
   color: #fff;
   font-size: 20px;
+}
+
+/* ----------------------------FOOTER------------------------ */
+.foot {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  height: 20vh;
+  width: 30vw;
+  margin: 5px;
+}
+.brand img {
+  height: 80px;
+  overflow: hidden;
+}
+.brand h3 {
+  color: #fff;
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+.follow {
+  height: 20vh;
+  width: 40vw;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.box {
+  color: #ffffff;
+  font-size: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+.insta:hover {
+  color: #cb2a4a;
+  transform: scale(1.2);
+}
+.facebook:hover {
+  color: #008cff;
+  transform: scale(1.2);
+}
+.youtube:hover {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+.linkedIn:hover {
+  color: #0a66c2;
+  transform: scale(1.2);
+}
+.twitter:hover {
+  color: #1da1f2;
+  transform: scale(1.2);
+}
+
+.rights {
+  height: 20vh;
+  width: 20vw;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rights p {
+  color: #fff;
+}
+.lst {
+  margin-left: 38px;
 }
