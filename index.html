@@ -23,7 +23,7 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
         <div class="nav-btn">
-          <button class="signin-btn">
+          <button class="signin-btn" id="openSignin">
             <i class="fa-solid fa-user"></i> Sign In
           </button>
         </div>
@@ -217,5 +217,57 @@
         </div>
       </div>
     </footer>
+
+    <!-------------------------------------Sign-in-Modal--------------------------------------->
+    <div class="signin-container" id="signin-container">
+      <div class="signin-card">
+        <button class="close-btn" id="closeSignin">&times;</button>
+
+        <img src="/images/logo.png" alt="" />
+
+        <h2>Welcome Back</h2>
+        <p>Sign in to your Imperial Motors account</p>
+
+        <form id="signinForm">
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form-option">
+            <label>
+              <input type="checkbox" id="rememberMe" />Remember me
+            </label>
+
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+          </div>
+
+          <div class="sign-in-btn">
+            <button type="submit" class="Signin-btn">Sign In</button>
+          </div>
+
+          <p class="signup-text">
+            Don't have an account?
+            <a href="#" class="signup-link">Sign Up</a>
+          </p>
+
+          <p id="signup-message" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <script src="hello.js"></script>
   </body>
 </html>
